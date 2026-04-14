@@ -12,7 +12,14 @@ use('ecommerce')
 // )
 
 
-db.products.updateOne(
+// db.products.updateOne(
+// { name: "Wireless Mouse" },
+// { $push: { tags: "new" } }
+// )
+
+
+db.products.findOneAndUpdate(
 { name: "Wireless Mouse" },
-{ $push: { tags: "new" } }
+{ $addToSet: { tags: "hardware" }},
+{returnDocument: "after"}
 )

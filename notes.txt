@@ -1,0 +1,4 @@
+Important ques: 
+    1. How does MongoDB's storage engine (WiredTiger) handle concurrency?
+    2. What information is encoded in a MongoDB ObjectId, and how does this affect distributed insertion ordering?
+    3. How does MongoDB handle write concern, and what are the trade-offs between w:1 and w:majority?

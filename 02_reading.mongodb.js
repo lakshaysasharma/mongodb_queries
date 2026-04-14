@@ -14,4 +14,6 @@ use('ecommerce')
 
 // db.products.find({}, { name: 1, price: 1, _id: 0 })
 
-db.products.find().sort({ price: -1 }).skip(1).limit(1)
+// db.products.find().sort({ price: -1 }).skip(1).limit(1)
+
+db.products.find({price: {$gt: 1000}}).toArray()
